@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Задание №4</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	</head>
+
+
+
+<body class="body">
+<header>
+<nav class="navbar navbar-expand-lg">
+  <img class="logo" src="logo.jpg"></img>
+	<h1 class="textlogo">Задание №4: Bootstrap</h1>
+  	<div class="md-collapse navbar-collapse justify-content-center">
+	    <ul class="navbar-nav align-items-center">
+	      <li class="nav-item"> <a class="nav-link" href="#table">Таблица</a></li>
+	      <li class="nav-item"> <a class="nav-link" href="#link">Ссылки</a> </li>
+	      <li class="nav-item"> <a class="nav-link" href="#forma">Форма</a> </li>
+	    </ul>
+  </div>
+</nav>
+</header>
+
+<div class="container m-md-auto w-100 d-md-flex flex-md-column">
+	<div class="middle row p-2 my-2 mx-3">
+		<div id="table" class="container m-md-auto w-100 d-md-flex flex-md-column">
+			<h1 class="middleheader">Таблица</h1>
+			<table>
+				<thead>
+					<tr class="nch">
+						<th>Название породы</th>
+						<th colspan="2">Описание/особенности</th>
+						<th>Размер</th>
+						<th>Вес</th>
+						<th>Длина жизни</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Мейн-кун</th>
+						<th>Появилась в США в штате Мэн</th>
+						<th>Другое название американская енотовая кошка</th>
+						<th>25-41см</th>
+						<th>3-12кг</th>
+						<th>12-15лет</th>
+					</tr>
+					<tr class="nch">
+						<th>Ориентальная</th>
+						<th colspan="2">Предки ориенталов происходят из Сиама</th>
+						<th>24-25см</th>
+						<th>4-7кг</th>
+						<th>16-18лет</th>
+					</tr>
+					<tr>
+						<th>Абиссинская</th>
+						<th>Одна из первых пород домашних кошек</th>
+						<th>Игривый и умный питомец с красивой шерстью</th>
+						<th>26-32см	</th>
+						<th>3-7кг</th>
+						<th>12-20лет</th>
+					</tr>
+					<tr class="nch">
+						<th>Девон-рекс</th>
+						<th colspan="2">Ушастый «англичанин» с мягкой, волнистой шерсткой и огромными глазами</th>
+						<th>24-26см</th>
+						<th>2-4кг</th>
+						<th>12-15лет</th>
+					</tr>
+					<tr>
+						<th>Персидская</th>
+						<th>Родиной породы является древняя Персия</th>
+						<th>Обладает длинной шерстью и приплюснутой мордочкой</th>
+						<th>26-30см</th>
+						<th>4-7кг</th>
+						<th>12-15лет</th>
+					</tr>
+				</tbody>	
+			</table>
+		</div>
+	</div>
+
+	<div class="row order-md-first p-2 my-2 mx-0">
+		<div class="middle col-12">
+		<ul>
+			<h1 class = "middleheader" id="link">Гиперссылки</h1>
+			<li>1) <a href="//kubsu.ru/" title = "Нажмите">Гиперссылка на главную страницу сайта kubsu.ru </a></li>
+			<li>2) <a href="https://kubsu.ru" title = "https">Гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
+			<li>3)<br><a href = "https://kubsu.ru/"> <img src = "https://i0.wp.com/narisyu.cdnbro.com/posts/3510453-kot-pushin-po-kletochkam-9.jpg?ssl=1" alt="Логотип КубГУ" style = "width: 100px; height: 100px"> </a></li>
+			<li>4,9) <a href = "./form.html">Перейти на нашу форму и заполнить её</a></li>
+			<li>5) <a href = "./index.html">Главная страница</a></li>
+			<li>6)<a href = "#bottomofpage">Перейти вниз на этой странице</a></li>
+			<li>7) <a href="kubsu.ru?first=1&second=12&third=5" title = "Нажмите">Гиперссылка c параметрами в URL</a></li>
+			<li>8) <a href="kubsu.ru?id=1" title = "Нажмите">Гиперссылка c параметром id в URL</a></li>
+			<li>10) <a href="./about/about.html">Ссылка в каталоге about</a></li>
+			<li>11) <a href="../lvl2.html">Страница в каталоге уровнем выше</a></li>
+			<li>12) <a href="../../lvl3.html">Страница в каталоге двумя уровнями выше</a></li>
+			<li>13) Это абзац. Здесь можно перейти на <a href="https://kubsu.ru">сайт</a> КубГУ.</li>
+			<li>14) <a href="https://ru.wikipedia.org/wiki/Ориентальная_кошка#Характер">Ссылка на фрагмент википедии</a></li>
+
+			<li>15)<img src="image.jpg" alt="Котик" width="200" usemap="#Cat">
+			<map name="Cat">
+				<area shape = "circle" coords="125,90,70" href = "https://ru.wikipedia.org/wiki/Ориентальная_кошка" title="Круглая область" alt="not found">
+				<area shape = "rect" coords="200,0,250,80" href = "https://ru.wikipedia.org/wiki/Мейн-кун" title="Прямоугольная область" alt="not found">
+			</map></li>
+
+			<li>16) <a href=""> Ссылка с пустым href </a></li>
+			<li>17) <a> Ссылка без href</a></li>
+			<li>18) <a href="https://kubsu.ru" rel="nofollow">Ссылка на сайт КубГУ, по которой запрещен переход поисковикам</a></li>
+			<li>19) <!--noindex--> <a href="https://ru.wikipedia.org/wiki/Мейн-кун">Запрещённая ссылка для индексации поисковиками </a><!--/noindex--></li>
+			<li>20)	<ol>
+				<li><a href="https://ru.wikipedia.org/wiki/Мейн-кун" title="Большие мягкие коты">Коты породы мейн-кун</a></li>
+				<li><a href="https://ru.wikipedia.org/wiki/Ориентальная_кошка" title="Очень умные и общительные коты">Ориентальные коты</a></li>
+				</ol>
+
+			<li>21)Ссылка на файл на сервере FTP с авторизацией<br><a href = "ftp://fctpm:2024211@fctpm.ru/image.jpg"></a></li>
+		</ul>
+		</div>
+	</div>
+
+    <div class="middle row p-2 my-2 mx-0 text-center">
+		<form id="forma" class="w-100 col-auto m-auto my-1 py-1 px-0" >
+			<h1 class="middleheader">Форма</h1>
+			<div class="my-2 mx-0"><p>Введите ФИО:<br> <input type="text" name="fio" placeholder="Иванов Иван Иванович"></p></div>
+			<div class="my-2 mx-0"><p>Введите e-mail:<br> <input type="email" name="email" placeholder="form@fctpm.ru"></p>	</div>
+			<div class="my-2 mx-0"><p>Введите номер телефона:<br> <input type="tel" name="tel" placeholder="+7(___)___-__-__"></p></div>
+			<div class="my-2 mx-0"><p>Введите дату рождения:<br> <input type="date" name="dateofbirth" value="2024-09-11"></p></div>
+			<div class="my-2 mx-0"><p>Пол:<br> <input type="radio" name="gender" value="val1">Женский <input type="radio" name="gender" value="val2">Мужской</p></div>
+			<div class="my-2 mx-0"><p>Выберите любимый язык программирования:<br>
+			<select name="progrlang" multiple="multiple">
+				<option value="Значение1" selected = "selected">Pascal</option>
+				<option value="Значение2" selected = "selected">C</option>
+				<option value="Значение3">C++</option>
+				<option value="Значение4">JavaScript</option>
+				<option value="Значение5">PHP</option>
+				<option value="Значение6">Python</option>
+				<option value="Значение7">Java</option>
+				<option value="Значение8">Haskel</option>
+				<option value="Значение9">Clojure</option>
+				<option value="Значение10">Prolog</option>
+				<option value="Значение11">Scala</option>
+			</select></p></div>
+			<div class="my-2 mx-0"><p>Напишите вашу биографию: <br><textarea name="Text1" cols="40" rows="5" placeholder="Биография"></textarea></p></div>
+			<div class="my-2 mx-0"><p><input type="checkbox" checked="checked" name="check"> С контрактом ознакомлен(а)</p></div>
+			<div class="my-2 mx-0"><p><input type="submit" value="Отправить форму"></p></div>
+		</form>
+	</div>
+</div>
+
+<footer class="w-100">
+	<div class="container m-md-auto w-100">
+		<div class="row m-md-auto">
+			<a href="https://github.com/fum1no" class="middleheader" style="font-size: 30px;color: #3c6474;"> Саволенко Ксения </a>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
