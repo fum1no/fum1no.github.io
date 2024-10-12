@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Калькулятор подсчета стоимости товара</h1>
+    <div class="middle">
+      <form>
+        <input id="num1" />
+        <select class="elem" id="select1">
+          <option value="100">Товар 1 - 100р</option>
+          <option value="200">Товар 2 - 200р</option>
+          <option value="400">Товар 3 - 400р</option>
+          <option value="500">Товар 4 - 500р</option>
+        </select>
+        <button class="elem" id="button1" onclick="return click1();">Подсчитать стоимость</button>
+      </form>
+    </div>
+    <div class="res" id="result"></div>
+    
+    <script src="myScript.js"></script>
+</body>
+</html>
