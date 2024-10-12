@@ -14,6 +14,11 @@ function click1() {
     return false;
 }
 
+window.addEventListener("DOMContentLoaded", function (event) {
+    console.log("DOM fully loaded and parsed");
+    let btn = document.getElementById("button1");
+    btn.addEventListener("click", click1);
+});
 
     // if(!isNaN(num1) && parseInt(Number(num1)) == num1 && !isNaN(parseInt(num1, 10))){
         // num1 = parseInt(document.getElementById("num1").value);
