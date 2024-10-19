@@ -1,0 +1,30 @@
+.middle{
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    background-color: #8cc0bd;
+    border: solid;
+    border-color: #3c6474;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.elem{
+    margin-top: 5%;
+}
+
+.res{
+    background-color: #3c6474;
+    border: solid;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    border-color: #183c43;
+}
