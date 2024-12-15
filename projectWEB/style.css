@@ -329,6 +329,93 @@ nav li{
 }
 
 
+/* 3. support */
+/*supports_list, div, img supports, container, support_num, zag, podzag, */
+.supports_list > div{
+    padding: 27px 36px 42px 25px;
+    box-shadow: 20px 20px 40px rgba(5, 12, 51, 0.05);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.supports_list > div > img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.support_num{
+    font-size: 12px;
+    font-weight: bold;
+    color: #050C33;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+.supports_list .zag{
+    font-size: 18px;
+    color: #050C33;
+    margin-bottom: 12px;
+}
+.supports_list .podzag{
+    font-size: 16px;
+    color: #050C33;
+    opacity: 0.7;
+    line-height: 138%;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* 4. expertise */
+/*expertise, container, header_categories, podzag, br, expertise_back_img, expertise_laptop */
+
+#expertise{
+    background: #171925;
+    margin-top: -180px;
+    padding-top: 200px;
+    color: #fff;
+    position: relative;
+}
+#expertise .container{
+    position: relative;
+    z-index: 2;
+}
+#expertise h1{
+    text-align: left;
+    margin-top: 0;
+}
+#expertise .header_categories > div > span{
+    color: #F14D34;
+}
+#expertise .header_categories > div{
+    width: 99%;
+    margin-right: 0;
+}
+#expertise .header_categories .podzag{
+    font-size: 16px;
+}
+.expertise_back_img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    /* opacity: 0.2; */
+}
+.expertise_laptop{
+    position: relative;
+    bottom: -10vw;
+    width: 87%;
+    max-width: 600px;
+}
+
+
+
+/* 5  */
+
 
 @media (max-width: 768px){
     .fleximg li {
@@ -450,6 +537,27 @@ nav li{
         display: none;
     }
 
+    .supports_list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .supports_list > div{
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+    #expertise .header_categories{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #expertise .header_categories > div:nth-child(odd){
+        margin-left: 0;
+    }
+    #expertise .header_categories > div{
+        width: calc(50% - 10px) !important;
+    }
+    #expertise h1{
+        font-size: 32px;
+    }
 }
 
 @media (min-width: 992px){
@@ -485,6 +593,31 @@ nav li{
     .services_part{
         width: 25%;
     }
+    #expertise{
+        padding-top: 300px;
+        padding-bottom: 70px;
+    }
+    #expertise .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    #expertise h1{
+        font-size: 42px;
+    }
+    .expertise_laptop{
+        position: absolute;
+        width: 48vw;
+        max-width: unset;
+        bottom: -70px;
+        max-width: 720px;
+        /* margin-top: 200px; */
+    }
+    #expertise .header_categories,
+    #expertise h1{
+        /* padding-left: 48%; */
+        width: 500px;
+    }
 }
 
 @media (min-width: 1200px){
@@ -507,5 +640,17 @@ nav li{
     .supports_list > div{
         width: calc(25% - 10px);
         margin: 5px;
+    }
+    #expertise{
+        padding-top: 405px;
+        padding-bottom: 173px;
+    }
+    .expertise_laptop{
+        bottom: -110px;
+    }
+    #expertise .header_categories,
+    #expertise h1{
+        /* padding-left: 48%; */
+        width: 585px;
     }
 }
